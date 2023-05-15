@@ -1,22 +1,23 @@
 import Image from "next/image";
-import { PrismaClient } from "@prisma/client";
-
-const prisma = new PrismaClient();
+import prisma from "./prisma";
+import Exercise from "./Exercise";
 
 export default async function Home() {
   const exercises = await prisma.exercise.findMany();
+  console.log(exercises);
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1 className="text-3xl font-bold underline">Wlogger</h1>
-      <ul>
-        {exercises.map((e) => {
-          return (
-            <li key={e.exercise_id}>
-              {e.name} - {e.description}
-            </li>
-          );
-        })}
-      </ul>
+      <h1 className="text-3xl font-bold">Wlogger </h1>
+      <div className="container mx-auto grid gap-16 grid-cols-fluid">
+        {exercises.map((e) => (
+          <Exercise
+            key={e.exercise_id}
+            id={e.exercise_id}
+            name={e.name}
+            description={e.description!}
+          />
+        ))}
+      </div>
     </main>
   );
 }

@@ -18,17 +18,19 @@
 
 * {
   box-sizing: border-box;
-  font-family: "Poppins";
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    background-color: #251e1e;
+    color: #f9e5c1;
     padding: 0px;
     margin: 0px;
+}
+
+h1 {
+  color: #4452da;
+}
+
+h2 {
+  color: #c5a168;
 }
