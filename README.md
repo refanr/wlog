@@ -1,3 +1,19 @@
+# Wlog - Workoutlogger app
+
+## About
+
+This is a super simple workout logger app, aimed towards powerlifters. To begin with there will be pre-made workouts of the day, WODs, based on a 3-way split of *Squat*, *Benchpress* and *Deadlift* WODs. Each WOD assumes some warmup sets and the work sets for the main exercise are 3 5-rep sets. The WODs will then include some accessory lifts, 3-5 for each WOD. It will be easy to add or remove sets on-the-fly, as well as adding or removing exercises from the accessories.
+
+## Next Steps
+
+There are a couple of things I would like to add to this app, the ability to customize the WODs and/or create entirely new workout plans, as well as keeping track of PRs, either rep wise or 1RM on any lift. This should make it easier to use percentage-based weights for the work sets. So I am thinking some sort of dashboard, with a workout plan maker and history/stats on lifts.
+
+## Author
+
+My name is Reynir Gunnarsson, I am just about to graduate with a BSc in Computer Science from Reykjavik University. I am an amateur/hobby powerlifter and have been looking for this kind of simple, no fuss workout logging app for quite some time, and this is my attempt at making one for my self and hopefully others when the time is right.
+
+# Next.js boilerplate README
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
