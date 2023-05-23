@@ -4,7 +4,7 @@ import Exercise from "./Exercise";
 
 export default async function Home() {
   const exercises = await prisma.exercise.findMany();
-  console.log(exercises);
+
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <h1 className="text-3xl font-bold">Wlogger </h1>
