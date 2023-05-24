@@ -1,3 +1,4 @@
+import Providers from "./components/Providers";
 import "./globals.css";
 import { Montserrat } from "next/font/google";
 
@@ -15,7 +16,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${montserrat.className} mx-32 my-12`}>{children}</body>
+      <body className={`${montserrat.className} mx-32 my-12`}>
+        <Providers>{children}</Providers>
+      </body>
     </html>
   );
 }
