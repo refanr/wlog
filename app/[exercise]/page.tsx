@@ -1,5 +1,5 @@
 import Link from "next/link";
-import prisma from "../prisma";
+import prisma from "../../lib/prisma";
 
 export default async function LogExercise({
   params,
@@ -42,9 +42,9 @@ export default async function LogExercise({
             <option>LBS</option>
           </select>
         </div>
-          <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-            <Link href={`/b`}>Log Set</Link>
-          </button>
+        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+          <Link href={`/b`}>Log Set</Link>
+        </button>
       </div>
     </div>
   );
